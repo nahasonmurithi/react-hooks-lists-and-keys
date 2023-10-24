@@ -8,7 +8,7 @@ function ColorList() {
     "darkslategray",
     "hotpink",
   ];
-
+/*
   return (
     <div>
       <h1>Top 5 CSS Colors</h1>
@@ -22,5 +22,20 @@ function ColorList() {
     </div>
   );
 }
+*/
+const colorElements = colors.map((color) => {
+  return <li style={{ color: color }}>{color}</li> 
+});
+return(
+  <div>
+    <h1>Top 5 CSS Colors</h1>
+    <ol>
+      {/*displap the array of <li> elements here*/}
+      {colorElements}
+    </ol>
+  </div>
+)
+}
+
 
 export default ColorList;
